@@ -1,0 +1,672 @@
+a {
+    text-decoration: none;
+}
+
+a.underline {
+    text-decoration: underline;
+    color: unset;
+}
+
+p {
+    padding:10px;
+    margin: 0;
+}
+
+ion-button {
+    text-transform: none;
+}
+
+.h-full {
+    height: 100%;
+}
+
+#home {
+    background: no-repeat url('https://res.cloudinary.com/billsmoov/image/upload/v1649153431/background.jpg');
+    background-size: contain;
+    width: 100%;
+    display: inline-block;
+}
+
+#header {
+    width: 100%;
+    height: 72px;
+    background-color: white;
+}
+
+#logo {
+    float: left;
+    min-width:200px;
+    height: 50px;
+    background: url('https://res.cloudinary.com/billsmoov/image/upload/h_50/v1648580308/Logos/billsmoov_logo.png') no-repeat;
+    background-size: contain;
+    margin: 10px 0 0 10px;
+}
+
+#navigation {
+    float:right;
+    margin: 10px 0 0 0;
+}
+
+#typewriter {
+    color: #6572f5;
+}
+
+.no-border {
+    --inner-border-width: 0;
+}
+
+.no-p-start {
+    --padding-start: 0;
+}
+
+.label {
+    font-family: "montserrat-regular", sans-serif !important;
+    color: #777 !important;
+    text-overflow: unset !important;
+    white-space: unset !important;
+    overflow: unset !important;
+    text-align: justify !important;
+}
+
+.notification-icon {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 10px;
+}
+
+.searchResultItem:hover {
+    background-color: #eee;
+}
+
+.item-no-padding-start {
+    --padding-start: 0;
+}
+
+/*
+ * Invoice pop up
+*/
+
+.big-modal {
+    --min-width: 95%;
+    --min-height: 80%;
+}
+
+.invoice_container {
+    display:flex;
+    height:100%;
+}
+
+.pdf_viewer {
+    width: 75%;
+    min-width: 850px;
+    height: 100%;
+    float: left;
+}
+
+.invoice_detail {
+    width:25%;
+    min-width: 400px;
+    float: left;
+}
+
+/*
+ * Authentication
+*/
+
+.card-authentication {
+    margin: 0;
+}
+.left-authentication {
+    position: absolute;
+    max-width: 431px;
+    width: 100%;
+    background: linear-gradient(146.07deg, #9359FF 3.58%, #5568FF 77.4%);
+    border-radius: 20px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    --min-height: 0;
+    z-index: 1;
+}
+
+.right-authentication {
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.right-list-authentication {
+    max-width: 370px;
+    margin: auto!important;
+}
+
+.logo-authentication {
+    background-image: url("/src/assets/logo.svg");
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.header-authentication {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #26468B;
+    margin-bottom: 23px;
+    padding-left: 14px;
+}
+
+.input-authentication {
+    width: 335px;
+    height: 49px;
+    background: #FAFAFA;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 6.5px;
+    padding: 10px!important;
+    margin-top: 9px;
+    margin-bottom: 32px;
+}
+
+.input-authentication input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FAFAFA inset!important;
+}
+
+.label-authentication {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 12px;
+    color: #26468B;
+}
+
+.button-authentication {
+    width: 100%;
+    height: 39px;
+    overflow: hidden;
+    border-radius: 8.5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    background: linear-gradient(146.07deg, #9359FF 3.58%, #5568FF 77.4%);
+    margin: 0 2px;
+    text-transform: capitalize;
+}
+
+.already-authentication {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 27px;
+    padding-left: 10px;
+    color: #26468B;
+}
+
+.link-authentication {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    color: #6588f8!important;
+}
+
+.agree-authentication {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -5px;
+    padding-left: 5px;
+    margin-bottom: 28px;
+    color: #777;
+}
+
+.checked-authentication {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .right-list-authentication {
+        box-sizing: content-box;
+        padding-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .left-authentication {
+        display: none;
+    }
+    .right-list-authentication {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+ * responsive header
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    #header {
+        height:50px;
+    }
+    #logo {
+        min-width:135px;
+        height: 40px;
+        background: url('https://res.cloudinary.com/billsmoov/image/upload/h_40/v1648580308/Logos/billsmoov_logo.png') no-repeat;
+        margin: 5px 0 0 0;
+    }
+    #navigation {
+        margin: 0px;
+    }
+    .optionalMenuButton {
+        display: none;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+ * home
+ * ------------------------------------------------------------------- */
+
+.home-content {
+    width: 100%;
+}
+
+.home-content .contents {
+    position: relative;
+}
+
+.home-content-left {
+    float: left;
+    max-width: 700px;
+    padding: 11rem 0 0 5rem;
+    width: 60%;
+}
+
+.home-content-left h3 {
+    font-family: "montserrat-regular", sans-serif;
+    color: #777;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+.home-content-left h1 {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 3rem;
+    letter-spacing: -.05rem;
+    color: #666;
+    margin: 0 0 40px 0;
+}
+
+.home-content-left .buttons {
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    border: 3px solid grey;
+    margin-top: 20px;
+}
+
+.home-content-left .buttons a {
+    text-decoration: none;
+    color: grey;
+}
+
+.home-image-right {
+    float: right;
+    content: url('https://res.cloudinary.com/billsmoov/image/upload/h_600/v1649152295/mobile_screen_1.png');
+}
+
+/* -------------------------------------------------------------------
+ * responsive home
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1800px) {
+    .home-content-left {
+        padding: 7rem 0 0 3rem;
+    }
+    .home-content-left h3 {
+        font-size: 1.5rem
+    }
+    .home-content-left h1 {
+        font-size: 3rem;
+        margin: 0 0 70px 0;
+    }
+    .home-image-right {
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_700/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .home-content-left {
+        max-width: 600px;
+        padding: 7rem 0 0 3rem;
+    }
+    .home-content-left h3 {
+        font-size: 1.3rem
+    }
+    .home-content-left h1 {
+        font-size: 2.5rem;
+        margin: 0 0 50px 0;
+    }
+    .home-image-right {
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_550/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-content-left {
+        max-width: 500px;
+    }
+    .home-content-left h3 {
+        font-size: 1.1rem
+    }
+    .home-content-left h1 {
+        font-size: 2.2rem;
+    }
+    .home-image-right {
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_450/v1649152295/mobile_screen_1.png');
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .home-content-left {
+        max-width: 400px;
+        padding: 5rem 0 0 1.5rem;
+    }
+    .home-content-left h3 {
+        font-size: 0.9rem
+    }
+    .home-content-left h1 {
+        font-size: 1.8rem;
+        margin: 0 0 20px 0;
+    }
+    .home-image-right {
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_400/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #home {
+        background-size: cover;
+    }
+    .home-content .contents {
+        text-align: center;
+        display:block;
+    }
+    .home-content-left {
+        width:100%;
+        max-width: 100%;
+        display: block;
+        padding: 4rem 0 0 0;
+    }
+    .home-content-left h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3px;
+    }
+    .home-content-left h1 {
+        font-size: 3rem;
+        margin: 0 0 50px 0;
+    }
+    .home-image-right {
+        float: unset;
+        margin: auto;
+        padding-top: 50px;
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_600/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-content-left {
+        padding: 3rem 0 0 1rem;
+    }
+    .home-content-left h3 {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+    .home-content-left h1 {
+        font-size: 2.2rem;
+        margin: 0 0 30px 0;
+    }
+    .home-image-right {
+        padding-top: 40px;
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_450/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 1rem;
+    }
+
+    .notification-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-content-left {
+        padding: 1rem 0 0 0.2rem;
+    }
+    .home-content-left h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+    .home-content-left h1 {
+        font-size: 1.8rem;
+        margin: 0 0 20px 0;
+    }
+    .home-image-right {
+        padding-top: 30px;
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_350/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home-content-left {
+        padding: 1rem 0 0 0.2rem;
+    }
+    .home-content-left h3 {
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+    .home-content-left h1 {
+        font-size: 1.2rem;
+        margin: 0 0 20px 0;
+    }
+    .home-image-right {
+        padding-top: 20px;
+        content: url('https://res.cloudinary.com/billsmoov/image/upload/h_250/v1649152295/mobile_screen_1.png');
+    }
+    .button-large {
+        font-size: 0.6rem;
+    }
+}
+
+/* -------------------------------------------------------------------
+ * info
+ * ------------------------------------------------------------------- */
+
+.info-content {
+    width:70%;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: "montserrat-regular", sans-serif;
+    color: grey;
+    margin: 100px auto 30px auto;
+}
+
+.info-images {
+    display: table-cell;
+    width:30%;
+    padding:0 30px 0 30px;
+}
+
+.first {
+    padding:0 30px 0 0;
+}
+
+.middle {
+    width:35%;
+    padding:0 20px 0 20px;
+}
+
+.last {
+    padding:0 0 0 30px;
+}
+
+.info-images img {
+    width:25px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .info-content {
+        margin: 30px auto 30px auto;
+    }
+
+    .info-images {
+        display: block;
+        width:100%;
+        padding: 0;
+        margin: 50px auto 50px auto;
+    }
+
+    .first {
+        padding:0;
+    }
+
+    .last {
+        padding:0;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+ * howto
+ * ------------------------------------------------------------------- */
+
+#howto {
+    display: flex;
+}
+
+.howto-content {
+    width:70%;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: "montserrat-regular", sans-serif;
+    color: grey;
+    margin: 50px auto 0px auto;
+}
+
+.howto-steps {
+    float: left;
+}
+
+.howto-img {
+    float: left;
+    position: relative;
+    top: -50px;
+    content: url('https://res.cloudinary.com/billsmoov/image/upload/h_400/v1649152295/mobile_screen_2.png');
+}
+
+@media only screen and (max-width: 1300px) {
+    .howto-img {
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .howto-content {
+        margin: 30px auto 30px auto;
+    }
+
+    .howto-img {
+        display: none;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+ * faq
+ * ------------------------------------------------------------------- */
+
+#faq {
+    display: flex;
+}
+
+.faq-content {
+    width:70%;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: "montserrat-regular", sans-serif;
+    color: grey;
+    margin: 0px auto 50px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .howto-content {
+        margin: 30px auto 30px auto;
+    }
+}
+
+
+/* -------------------------------------------------------------------
+ * footer
+ * ------------------------------------------------------------------- */
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer-content {
+    width:fit-content;
+    margin:auto;
+}
+
+.footer-item {
+    margin: 10px;
+}
+
+.footer-item a {
+    text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------
+ * bills
+ * ------------------------------------------------------------------- */
+
+.summary {
+    display: flex;
+}
+
+.summary_item {
+    width: 33%;
+}
+
+@media only screen and (max-width:600px) {
+    .summary {
+        display: block;
+    }
+
+    .summary_item {
+        width: unset;
+    }
+}

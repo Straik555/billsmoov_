@@ -1,0 +1,317 @@
+.bills-header {
+    box-sizing: border-box;
+    height: 255px;
+    width: 100%;
+    padding: 36px 29px;
+    background: linear-gradient(146.07deg, #9359FF 3.58%, #5568FF 77.4%);
+    color: white;
+    border-bottom-right-radius: 20px;
+    position: initial;
+}
+
+.bills-header-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #FFFFFF;
+    padding-inline: 0;
+    margin-left: 30px;
+}
+
+.bills-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 22px 28px 24px;
+    background: #FFFFFF;
+    border-radius: 17px;
+    box-shadow: none;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.bills-col {
+    margin-top: 10px;
+}
+
+.bills-icon-info {
+    position: absolute;
+    bottom: 10px;
+    right: 19px;
+    width: 20px;
+    height: 20px;
+}
+
+.bills-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 69px;
+    min-width: 69px;
+    height: 69px;
+    border-radius: 100%;
+    background: #F4F7FE;
+    padding: 19px;
+    --inner-border-width: 0;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+}
+
+.bills-item-icon {
+    width: 100%;
+    height: 100%;
+    background: #F4F7FE;
+}
+
+.bills-card-content {
+    padding: 0 0 0 22px;
+}
+
+.bills-card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #919BAE;
+}
+
+.bills-card-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #26468B;
+}
+
+.bills-content {
+    --padding-start: 47px;
+    --padding-top: 23px;
+    --padding-bottom: 20px;
+    --padding-end: 82px;
+}
+
+.bills-content-item {
+    width: 100%;
+    --min-height: 69px;
+    max-height: 69px;
+    --inner-border-width: 0;
+    --padding-end: 7px;
+    --padding-start: 0;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(38, 70, 139, 0.06);
+    box-shadow: 0px 1px 10px rgba(89, 86, 130, 0.03);
+    border-radius: 10px;
+    box-sizing: border-box;
+    --detail-icon-opacity: 1;
+}
+
+.bills-content-icon {
+    background: #F8F9FB;
+    border-radius: 4px;
+    width: 57px;
+    min-width: 57px;
+    height: 57px;
+    margin-left: 6px;
+    margin-right: 9px;
+}
+
+.bills-content-item-wrapper {
+    flex-direction: column!important;
+    --background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.bills-content-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    color: #26468B;
+    width: max-content;
+    padding-inline: 0;
+}
+
+.bills-content-title.text {
+    padding-right: 40px;
+}
+
+.bills-content-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    padding: 0;
+}
+
+.bills-content-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #919BAE;
+    padding-top: 5px;
+}
+
+.bills-content-filter-wrapper {
+    margin-bottom: 28px;
+    --inner-padding-end: 3px;
+    --padding-start: 7px;
+}
+
+.bills-content-filter {
+    height: 38px;
+    --min-height: 38px;
+    background: #FFFFFF;
+    border: 1px solid rgba(38, 70, 139, 0.05);
+    border-radius: 8px;
+    --inner-padding-end: 0;
+    width: 153px;
+    min-width: 153px;
+}
+
+.bills-content-filter.right {
+    margin-left: 14px;
+}
+
+.bills-content-filter-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    color: #26468B;
+}
+
+.bills-content-filter-icon {
+    transform: rotate(90deg);
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .bills-header {
+        padding: 36px 0;
+    }
+
+    .bills-card {
+        margin: 0 5px;
+        padding: 15px;
+    }
+
+    .bills-card-content {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    .bills-header {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bills-header {
+        padding: 6px 2px 3px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .bills-icon-info {
+        display: none;
+    }
+
+    .bills-content-filter-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .bills-content-filter {
+        --padding-start: 15px;
+    }
+
+    .bills-col {
+        min-width: 100%;
+        padding: 0;
+        margin-bottom: 12px;
+        margin-top: 0;
+    }
+
+    .bill-row {
+        flex-direction: column;
+    }
+
+    .bills-card {
+        padding: 4px 8px 1px 71px;
+    }
+
+    .bills-item {
+        width: 42px;
+        min-width: 42px;
+        height: 42px;
+        padding: 11px;
+    }
+
+    .bills-card-title {
+        font-size: 12px;
+    }
+
+    .bills-card-price {
+        font-size: 20px;
+    }
+
+    .bills-header-title {
+        font-size: 20px;
+        margin-left: 27px;
+        margin-bottom: 25px;
+    }
+
+    .bills-card-content {
+        padding-left: 43px;
+    }
+
+    .bills-content {
+        --padding-start: 19px;
+        --padding-end: 20px;
+        --padding-top: 29px;
+    }
+
+    .bills-item {
+        --inner-padding-end: 0;
+    }
+
+    .bills-content-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .bills-content-subtitle {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .bills-content-icon {
+        margin-left: 5px;
+        margin-right: 1px;
+    }
+
+    .bills-content-title.text {
+        padding-right: 0;
+    }
+
+    .bills-content-item {
+        --inner-padding-end: 0;
+        margin-bottom: 8px;
+    }
+
+    .bills-content-subtitle-hidden {
+        display: none;
+    }
+
+    .bills-content-header-wrapper {
+        margin-top: 5px;
+    }
+}
+

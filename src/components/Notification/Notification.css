@@ -1,0 +1,116 @@
+.notification-card {
+    border-radius: 17px;
+    padding: 20px 20px 0;
+    height: 100%;
+    position: relative;
+}
+
+.notification-card.warning {
+    background: linear-gradient(97.82deg, #FFB932 -1.48%, #FFB040 100.76%);
+}
+.notification-card.success {
+    background: linear-gradient(97.82deg, #4ADDC4 -1.48%, #4ADDC4 100.76%);
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+.item-notification {
+    position: relative;
+    width: 100%;
+    background-color: transparent!important;
+    --ion-background-color: transparent;
+    --inner-border-width: 0;
+    --inner-padding-end: 0;
+    --padding-start: 0;
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+}
+
+.item-notification-col {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.item-notification-children {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.item-notification-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #26468B;
+}
+
+.item-notification-text.header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+
+.notification-card-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 265px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.item-notification-col-wrapper {
+    --inner-border-width: 0;
+    padding: 0;
+}
+
+.item-notification-col-item {
+    --padding-start: 0;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .item-notification {
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
+
+    .item-notification-col,
+    .item-notification-children {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .item-dashboard-button {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    .notification-card {
+        margin: 7px 10px;
+    }
+
+    .item-notification-col {
+        flex-direction: row-reverse;
+    }
+
+    .item-notification-col-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex!important;
+        flex-direction: column!important;
+    }
+
+    .item-notification-col-wrapper {
+        --min-height: 20px;
+    }
+}

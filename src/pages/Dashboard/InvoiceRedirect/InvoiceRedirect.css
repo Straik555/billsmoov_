@@ -1,0 +1,38 @@
+.invoice-icon {
+    margin-bottom: 20px;
+}
+
+.invoice-button {
+    --background: #919BAE;
+    border-radius: 8.5px;
+    max-width: 318px;
+    width: 100%;
+}
+
+.invoice-button-wrapper {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 991.5px) {
+    .invoice-icon {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .invoice-button {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .invoice-button-wrapper {
+        margin: 0;
+        padding-inline-start: 35px;
+        padding-inline-end: 35px;
+    }
+
+    .invoice-icon {
+        margin-bottom: 5px;
+    }
+}

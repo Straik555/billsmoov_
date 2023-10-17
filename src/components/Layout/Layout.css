@@ -1,0 +1,135 @@
+.left-layout {
+    position: relative!important;
+    min-width: 292px;
+    width: 292px;
+    border: none;
+    height: 100%;
+    display: block!important;
+    z-index: 1;
+    transform: translateX(0);
+    transition: all .5s linear;
+    overflow: visible;
+}
+
+.layout-wrapper {
+    background: #FBFBFB;
+    --background: #FBFBFB;
+}
+
+.left-layout.active {
+    left: auto;
+    right: 0;
+    transition: all .5s linear;
+}
+
+.logo-menu {
+    height: 25px;
+    width: 149px;
+    margin: 103px 65px 91px 78px;
+}
+
+.logo-menu::after {
+    display: none;
+}
+
+.icon-layout {
+    stroke: #26468B;
+    margin-right: 17px;
+}
+
+.menu-item-layout {
+    --padding-start: 20px;
+    --inner-padding-end: 0;
+    width: 242px;
+    --inner-border-width: 0;
+    margin-bottom: 26px;
+    border-radius: 11px;
+    background: #FBFBFB;
+    --background: #FBFBFB;
+}
+
+.menu-list-layout {
+    padding: 0 25.5px;
+    background: #FBFBFB;
+    --background: #FBFBFB;
+}
+
+.label-layout {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    color: #26468B!important;
+}
+
+.label-layout.active {
+    font-weight: 800;
+    background: linear-gradient(146.07deg, #9359FF 3.58%, #5568FF 77.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.menu-item-layout-bottom {
+    position: fixed;
+    border-radius: 11px;
+    bottom: 26px;
+    left: 25.5px;
+}
+
+.icon-layout-bottom {
+    margin-right: 17px;
+}
+
+.arrow-layout {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    left: -55px;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    z-index: 10;
+    background-color: white;
+    padding: 11px;
+    border-radius: 100%;
+    transition: all .5s linear;
+    transform: translateX(0);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-layout.active {
+    left: -20px;
+    transform: rotate(180deg);
+}
+
+.main-layout-opacity {
+    background: #071023;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 991.5px) {
+    .arrow-layout {
+        display: block;
+    }
+    .left-layout {
+        position: absolute!important;
+        min-width: 219px;
+        width: 219px;
+        right: -219px;
+    }
+    .logo-menu {
+        margin: 60px 20px 84px 40px;
+    }
+    .menu-list-layout {
+        padding: 0 14.5px;
+    }
+    .menu-item-layout {
+        width: 182px;
+        padding-right: 0;
+    }
+    .menu-item-layout-bottom {
+        left: 14.5px;
+        bottom: 0;
+    }
+}
